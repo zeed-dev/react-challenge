@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import OnBoardingPage from './Container/On Boarding/OnBoardingPage';
+// import Login from './Container/Login/Login';
+import Regsiter from './Container/Register/Regsiter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Regsiter />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
