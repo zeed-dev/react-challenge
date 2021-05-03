@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "500",
         color: "#877F7F",
     },
+    root: {
+        minWidth: "248px"
+    }
 }))
 
 const ColorButton = withStyles(() => ({
@@ -38,15 +41,35 @@ const Register = () => {
             <div className={classes.paper}>
                 <img src={Image} alt="" className={classes.media} />
                 <Box marginTop="78px" />
-                <TextField id="outlined-basic" label="Nama" variant="outlined" />
+                <TextField
+                    id="outlined-basic"
+                    label="Nama"
+                    variant="outlined"
+                    style={{ minWidth: 248 }} />
                 <Box marginTop="32px" />
-                <TextField id="outlined-basic" label="Email" variant="outlined" />
+                <TextField
+                    id="outlined-basic"
+                    label="Email"
+                    variant="outlined"
+                    style={{ minWidth: 248 }} />
                 <Box marginTop="32px" />
-                <TextField id="outlined-basic" label="No Tlp." variant="outlined" />
+                <TextField
+                    id="outlined-basic"
+                    label="No Tlp."
+                    variant="outlined"
+                    style={{ minWidth: 248 }} />
                 <Box marginTop="32px" />
-                <TextField id="outlined-basic" label="Kata Sandi" variant="outlined" />
+                <TextField
+                    id="outlined-basic"
+                    label="Kata Sandi"
+                    variant="outlined"
+                    style={{ width: 248 }} />
                 <Box marginTop="32px" />
-                <TextField id="outlined-basic" label="Konfirmasi Kata Sandi" variant="outlined" />
+                <TextField
+                    id="outlined-basic"
+                    label="Konfirmasi Kata Sandi"
+                    variant="outlined"
+                    style={{ minWidth: 248 }} />
                 <Box marginTop="41px" />
                 <ColorButton variant="contained" color="primary">
                     Daftar
@@ -60,9 +83,10 @@ const Register = () => {
                     align="center"
                     color={classes.subtitle.color}>
                     Sudah punya akun?
-                    <Link href="#" style={{ color: "#149911", textDecoration: 'none' }} onClick={console.log("im buton")} > Masuk
+                    <Link href="/login" style={{ color: "#149911", textDecoration: 'none' }} onClick={console.log("im buton")} > Masuk
                     </Link>
                 </Typography>
+                <Box marginTop="32px" />
             </div>
         </Container>
     );

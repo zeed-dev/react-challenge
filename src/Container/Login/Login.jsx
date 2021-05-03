@@ -43,13 +43,14 @@ const Login = () => {
                 <TextField id="outlined-basic" label="Kata Sandi." variant="outlined" />
                 <Box marginTop="32px" />
                 <ColorButton variant="contained" color="primary">
-                    Daftar
+                    Masuk
                 </ColorButton>
                 <Box marginTop="26px" />
 
                 <Link href="#" style={{ color: "#149911", textDecoration: 'none', }} onClick={console.log("im buton")}> Masuk sebagai staff</Link>
 
             </div>
+            <Box marginTop="32px" />
         </Container>
     );
 }

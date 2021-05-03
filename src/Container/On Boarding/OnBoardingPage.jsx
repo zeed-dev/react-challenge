@@ -58,7 +58,7 @@ const OnBoardingPage = () => {
                     Aplikasi ini digunakan untuk membeli makanan dan minuman secara online dengan pembayaran menggunakan uang elektronik di Patra Park Food Culinary
                 </Typography>
                 <Box marginTop="60px" />
-                <ColorButton variant="contained" color="primary">
+                <ColorButton variant="contained" color="primary" href="/register">
                     Daftar
                 </ColorButton>
                 <Box marginTop="26px" />
@@ -69,9 +69,10 @@ const OnBoardingPage = () => {
                     align="center"
                     color={classes.subtitle.color}>
                     Sudah punya akun?
-                    <Link href="#" style={{ color: "#149911", textDecoration: 'none' }} onClick={console.log("im buton")} > Masuk
+                    <Link href="/login" style={{ color: "#149911", textDecoration: 'none' }} onClick={console.log("im buton")} > Masuk
                     </Link>
                 </Typography>
+                <Box marginTop="32px" />
             </div>
         </Container >
     );
