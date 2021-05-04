@@ -13,10 +13,6 @@ const useStyles = makeStyles((theme) => ({
         height: '165px',
         marginBottom: '33px'
     },
-    subtitle: {
-        fontWeight: "500",
-        color: "#877F7F",
-    },
 }))
 
 const ColorButton = withStyles(() => ({

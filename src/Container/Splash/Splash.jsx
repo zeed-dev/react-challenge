@@ -35,6 +35,7 @@ const Splash = () => {
                     onClick={console.log("im buton")} >
                     Patra Park Food Culinary
                 </Link>
+                <Box marginTop="150px" />
             </div>
         </Container >
     );
